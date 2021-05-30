@@ -5,15 +5,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Shared\CssPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Views\Shared\CssPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Areas\Admin\Views\" />
     <Folder Include="Domain\" />
     <Folder Include="Models\ViewComponents\" />
-    <Folder Include="Views\Shared\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\sass\" />
+    <Folder Include="Service\" />
   </ItemGroup>
 
 
