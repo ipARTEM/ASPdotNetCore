@@ -1,4 +1,4 @@
-﻿
+﻿@using ASPdotNetCore.Service
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 @if (ViewBag.Title != null)
@@ -8,7 +8,7 @@
 
 else
 {
-    <title>Мой сайт</title>
+    <title>@Config.CompanyName</title>
 }
 
 @if (ViewBag.Description != null)
