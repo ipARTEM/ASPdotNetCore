@@ -8,6 +8,9 @@ namespace ASPdotNetCore.Domain.Entities
 {
     public abstract class EntityBase
     {
+        protected EntityBase() => DateAdded = DateTime.UtcNow;
+
+
         [Required]
         public Guid Id { get; set; }  
 
@@ -26,10 +29,13 @@ namespace ASPdotNetCore.Domain.Entities
         [Display(Name = "SEO метатег Title")]
         public  string MetaTitle { get; set; }
 
-        [Display(Name = "Титульная картинка")]
+        [Display(Name = "SEO метатег Description")]
         public  string MetaDescription { get; set; }
 
-        [Display(Name = "Титульная картинка")]
+        [Display(Name = "SEO метатег Keywords")]
         public  string MetaKeywords { get; set; }
+
+        [DataType(DataType.Time)]
+        public DateTime DateAdded { get; set; }
     }
 }
