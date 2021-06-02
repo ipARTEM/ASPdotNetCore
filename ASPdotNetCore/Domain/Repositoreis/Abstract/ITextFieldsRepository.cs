@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ASPdotNetCore.Domain.Repositoreis.Abstract
 {
-    interface ITextFieldsRepository
+    public interface ITextFieldsRepository
     {
         IQueryable<TextField> GetTextFields();
 

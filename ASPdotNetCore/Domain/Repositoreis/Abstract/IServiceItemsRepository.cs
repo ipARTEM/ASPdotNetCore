@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ASPdotNetCore.Domain.Repositoreis.Abstract
 {
-    interface IServiceItemsRepository
+    public interface IServiceItemsRepository
     {
         IQueryable<ServiceItem> GetServiceItems();
 

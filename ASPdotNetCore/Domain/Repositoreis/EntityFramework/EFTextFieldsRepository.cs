@@ -1,4 +1,5 @@
 ﻿using ASPdotNetCore.Domain.Entities;
+using ASPdotNetCore.Domain.Repositoreis.Abstract;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ASPdotNetCore.Domain.Repositoreis.EntityFramework
 {
-    public class EFTextFieldsRepository
+    public class EFTextFieldsRepository: ITextFieldsRepository
     {
         private readonly AppDbContext context;
 
@@ -21,7 +22,7 @@ namespace ASPdotNetCore.Domain.Repositoreis.EntityFramework
             return context.TextFields;
         }
 
-        public TextField GetTextField(Guid id)
+        public TextField GetTextFieldById(Guid id)
         {
             return context.TextFields.FirstOrDefault(x => x.Id == id);
         }
@@ -50,5 +51,7 @@ namespace ASPdotNetCore.Domain.Repositoreis.EntityFramework
             context.TextFields.Remove(new TextField() { Id = id });
             context.SaveChanges();
         }
+
+ 
     }
 }
