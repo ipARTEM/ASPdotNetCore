@@ -56,9 +56,6 @@ namespace ASPdotNetCore
                 options.SlidingExpiration = true;
             });
 
-
-
-
             // добавляем поддержку контроллеров и представлений(MVC)
             services.AddControllersWithViews()
                 // выставляем совместимость с asp.net core 3.0

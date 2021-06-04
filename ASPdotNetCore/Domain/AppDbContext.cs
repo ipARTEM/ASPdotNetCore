@@ -42,8 +42,8 @@ namespace ASPdotNetCore.Domain
 
             modelbuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
             {
-               RoleId= "12345678-9012-34sd-dsfs-12345678912",
-               UserId= "12345678-90sd-3456-dsfs-12345678912",
+               RoleId= "12345678-9012-3456-7890-12345678912",
+               UserId= "12345678-9012-3456-dsfs-12345678912",
             });
 
             modelbuilder.Entity<TextField>().HasData(new TextField
