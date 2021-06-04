@@ -23,14 +23,14 @@ namespace ASPdotNetCore.Domain
 
             modelbuilder.Entity<IdentityRole>().HasData(new IdentityRole
             {
-                Id = "12345678-9012-3456-7890-12345678912",
+                Id = "12345678-9012-3456-7890-123456789012",
                 Name = "admin",
                 NormalizedName = "ADMIN"
             });
 
             modelbuilder.Entity<IdentityUser>().HasData(new IdentityUser
             {
-               Id= "12345678-9012-3456-dsfs-12345678912",
+               Id= "12345678-9012-3456-dsfs-123456789012",
                UserName="admin",
                NormalizedUserName="ADMIN",
                Email="a.khimin@yandex.ru",
@@ -42,27 +42,27 @@ namespace ASPdotNetCore.Domain
 
             modelbuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
             {
-               RoleId= "12345678-9012-3456-7890-12345678912",
-               UserId= "12345678-9012-3456-dsfs-12345678912",
+               RoleId= "12345678-9012-3456-7890-123456789012",
+               UserId= "12345678-9012-3456-dsfs-123456789012",
             });
 
             modelbuilder.Entity<TextField>().HasData(new TextField
             {
-                Id = new Guid("sd345678 - 9012 - 3456 - dsfs - 12345678912"),
+                Id = new Guid("sd345678-9012-3456-dsfs-123456789012"),
                 CodeWord="PageIndex",
                 Title="Главная"
             });
 
             modelbuilder.Entity<TextField>().HasData(new TextField
             {
-                Id = new Guid("sd345678 - 9012 - 3456 - dsfs - 12345678912"),
+                Id = new Guid("sd345678-9012-3456-dsfs-123456789012"),
                 CodeWord = "PageServices",
                 Title = "Наши услуги"
             });
 
             modelbuilder.Entity<TextField>().HasData(new TextField
             {
-                Id = new Guid("sd345678 - 9012 - 3456 - dsfs - 12345678912"),
+                Id = new Guid("sd345678-9012-3456-dsfs-123456789012"),
                 CodeWord = "PageContacts",
                 Title = "Контакты"
             });

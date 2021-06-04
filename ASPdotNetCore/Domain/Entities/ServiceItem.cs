@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace ASPdotNetCore.Domain.Entities
 {
-    public class ServiceItem:EntityBase
+    public class ServiceItem : EntityBase
     {
-        [Required(ErrorMessage="Заполните название услуги")]
-        [Display(Name ="Название услуги")]
+        [Required(ErrorMessage = "Заполните название услуги")]
+        [Display(Name = "Название услуги")]
         public override string Title { get; set; }
 
-        [Display(Name ="Краткое описание услуги")]
+        [Display(Name = "Краткое описание услуги")]
         public override string Subtitle { get; set; }
 
-        [Display(Name ="Полное описание услуги")]
+        [Display(Name = "Полное описание услуги")]
         public override string Text { get; set; }
     }
 }
